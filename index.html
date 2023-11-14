@@ -5,20 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arti rajput</title>
-    <link rel="icon" href="image/aboutside.jpg" type="image/png">
+    <link rel="icon" href="image/2339.jpg" type="image/png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" id="astra-child-theme-css-css"
-        href="https://www.heshtechnologies.com/wp-content/themes/astra-child/style.css?ver=1.0.0" media="all" />
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 </head>
 
 <body>
     <header class="header">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">Arti Rajput</a>
+            <a class="navbar-brand" href="/"> <img src="image/Web_Photo_Editor.jpg" alt="logo"
+                    style="border-radius: 20%;" height="60px" width="60px"> Arti Rajput</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -29,26 +28,18 @@
                         <a class="nav-link" href="about.html">About</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="contact.html">Book Appointment</a>
+                        <a class="nav-link" href="contact.html">Contact Us</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#skills">Skills</a>
+                        <a href="" class="nav-link" type="button" class="btn btn-outline-primary" data-toggle="modal"
+                            data-target="#exampleModal" data-whatever="@mdo">Book Appointment</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#project">Project</a>
+                        <a class="nav-link" href="#price">Price List</a>
                     </li>
                 </ul>
             </div>
         </nav>
-
-        <!-- <nav class="navbar">
-            <a href="#home" style="--i:1" class="active">Home</a>
-            <a href="#about" style="--i:2">About</a>
-            <a href="#services" style="--i:3">services</a>
-            <a href="#skills" style="--i:4">skills</a>
-            <a href="#project" style="--i:4">project</a>
-            <a href="#contact" style="--i:5">Contact</a>
-        </nav> -->
     </header>
     <section class="home" id="home">
         <div class="home-content">
@@ -69,11 +60,70 @@
                 <!-- <a href="#" style="--i:11"><i class='bx bxl-quora'></i></a> -->
                 <!-- <a href="#" target="_blank" style="--i:13"><i class='bx bxl-google-plus'></i></a> -->
             </div>
-            <a href="#contact" class="btn-box">Contact Me</a>
+            <a href="#contact" class="btn-box">Contact Me</a><br>
+            <div id="btn-book">
+                <button class="btn1" type="button" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">
+                    <span id="span">Book Appointment</span>
+                    <div id="container-stars">
+                        <div id="stars"></div>
+                    </div>
+                </button>
+            </div>
         </div>
-        <!-- <div class="home-img">
-            <img src="image/homeside.jpg" alt="my image" width="450px">
-        </div> -->
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Fill Information to Book Appointment </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body flex-column flex-sm-row">
+
+                        <div class="flex">
+                            <div class="images">
+                                <img src="image/Web_Photo_Editor.jpg" alt="image">
+                            </div>
+                            <form name="submit-to-google-sheet1">
+                                <div class="datas">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="recipient-name" name="name"
+                                            placeholder="Enter Your Name">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="number" class="form-control" maxlength="10" id="recipient-name" name="mobile"
+                                            placeholder="Enter Your Mobile No.">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="recipient-name" name="makeup type"
+                                            placeholder="Enter Your Makeup Type">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="date" class="form-control" id="recipient-name" name="date"
+                                            placeholder="Enter Your Date">
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea class="form-control" id="message-text" name="message"
+                                            placeholder="Enter Your Message"></textarea>
+                                    </div>
+                                    <!-- <button type="submit" value="submit" class="send">submit</button>
+                                    <span id="msg"></span> -->
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="submit" value="submit" class="btn btn-primary">Send message</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </section>
 
 
@@ -125,7 +175,8 @@
                     </div>
                     <div>
                         <i class="fas fa-star" style="color: #ff4081;"></i>
-                        <img class="serv-img" src="image/special effect/634f4c06f21696e78ac330afa4d22931.jpg" alt="bridal">
+                        <img class="serv-img" src="image/special effect/634f4c06f21696e78ac330afa4d22931.jpg"
+                            alt="bridal">
                         <h2>Celebrity Glamour</h2>
                         <p>Indulge in the allure of celebrity-inspired beauty with our exclusive celebrity glamour
                             services. From red carpet events to high-profile appearances, our makeup artists will bring
@@ -248,51 +299,51 @@
                             <h2>Bridal Glam</h2>
                         </div>
                     </div>
-                    <a href="https://example-link.com" target="_blank">
-                        <!-- Project 2 -->
-                        <div class="row">
-                            <div class="slideshow">
-                                <img src="image/party/download (3).jpeg" alt="Party Makeup Look" height="400px"
-                                    width="340px">
-                                <img src="image/party/images (4) - 2023-11-13T164356.306.jpeg" alt="Party Makeup Look"
-                                    height="400px" width="340px">
-                            </div>
-                            <div class="layer">
-                                <h2>Party Elegance</h2>
-                            </div>
+                    <!-- <a href="https://example-link.com" target="_blank"> -->
+                    <!-- Project 2 -->
+                    <div class="row">
+                        <div class="slideshow">
+                            <img src="image/party/download (3).jpeg" alt="Party Makeup Look" height="400px"
+                                width="340px">
+                            <img src="image/party/images (4) - 2023-11-13T164356.306.jpeg" alt="Party Makeup Look"
+                                height="400px" width="340px">
                         </div>
-                    </a>
-                    <a href="https://example-link.com" target="_blank">
-                        <!-- Project 3 -->
-                        <div class="row">
-                            <div class="slideshow">
-                                <img src="image/air brush/1.jpg" alt="Airbrush Makeup" height="400px" width="340px">
-                                <img src="image/air brush/tumblr_e21db37415511e85ce845afec1cdb9cf_780e94e4_1280.jpg"
-                                    alt="Airbrush Makeup" height="400px" width="340px">
-                            </div>
-                            <div class="layer">
-                                <h2> Airbrush Mastery</h2>
-                            </div>
+                        <div class="layer">
+                            <h2>Party Elegance</h2>
                         </div>
-                    </a>
+                    </div>
+                    <!-- </a> -->
+                    <!-- <a href="https://example-link.com" target="_blank"> -->
+                    <!-- Project 3 -->
+                    <div class="row">
+                        <div class="slideshow">
+                            <img src="image/air brush/1.jpg" alt="Airbrush Makeup" height="400px" width="340px">
+                            <img src="image/air brush/tumblr_e21db37415511e85ce845afec1cdb9cf_780e94e4_1280.jpg"
+                                alt="Airbrush Makeup" height="400px" width="340px">
+                        </div>
+                        <div class="layer">
+                            <h2> Airbrush Mastery</h2>
+                        </div>
+                    </div>
+                    <!-- </a> -->
 
                     <!-- Hidden projects -->
-                    <a href="https://example-link.com" target="_blank">
-                        <div class="hidden">
-                            <!-- Project 4 (hidden) -->
-                            <div class="row">
-                                <div class="slideshow">
-                                    <img src="image/special effect/634f4c06f21696e78ac330afa4d22931.jpg" alt="Special Effects Makeup" height="400px"
-                                        width="340px">
-                                    <!-- <img src="image/special-effects-2.png" alt="Special Effects Makeup" height="400px"
+                    <!-- <a href="https://example-link.com" target="_blank"> -->
+                    <div class="hidden">
+                        <!-- Project 4 (hidden) -->
+                        <div class="row">
+                            <div class="slideshow">
+                                <img src="image/special effect/634f4c06f21696e78ac330afa4d22931.jpg"
+                                    alt="Special Effects Makeup" height="400px" width="340px">
+                                <!-- <img src="image/special-effects-2.png" alt="Special Effects Makeup" height="400px"
                                         width="340px"> -->
-                                </div>
-                                <div class="layer">
-                                    <h2>Special Effects Magic</h2>
-                                </div>
+                            </div>
+                            <div class="layer">
+                                <h2>Special Effects Magic</h2>
                             </div>
                         </div>
-                    </a>
+                    </div>
+                    <!-- </a> -->
                     <!-- <a href="https://example-link.com" target="_blank">
                         <div class="hidden">
                             <!-- Project 5 (hidden)
@@ -318,28 +369,28 @@
         <button id="view-more-button" class="toggle-button" onclick="toggleProjects()">View More</button>
         <button id="view-less-button" class="toggle-button" style="display: none" onclick="toggleProjects()">View
             Less</button>
-    </section> 
+    </section>
 
     <section class="price" id="price">
         <div id="portfolio">
             <div class="main-text">
                 <h2>Discover <span style="color: #ee9222;">Price List</span></h2>
-                <h4>Note : click Image to know more about<span style="color: #ee9222;">Price List</span></h4>
+                <h4>Note : click Image to know more about <span style="color: #ee9222;">Price List</span></h4>
 
                 <div class="portfolio-content">
                     <!-- Project 1 -->
-                    <a href="">
+                    <a href="price1.html">
                         <div class="row">
                             <div class="price">
-                                <img src="image/air brush/tumblr_e21db37415511e85ce845afec1cdb9cf_780e94e4_1280.jpg" alt="Bridal Makeup Look" height="400px"
-                                    width="350px">
+                                <img src="image/air brush/tumblr_e21db37415511e85ce845afec1cdb9cf_780e94e4_1280.jpg"
+                                    alt="Bridal Makeup Look" height="400px" width="350px">
                             </div>
                             <h3>Bridal / Reception Makeup</h3><br>
                             <p>Price : Rs.15000-20000</p><br>
                             <!-- <button class="btn-box">Know More</button> -->
                         </div>
                     </a>
-                    <a href="https://example-link.com" target="_blank">
+                    <a href="price2.html">
                         <!-- Project 2 -->
                         <div class="row">
                             <div class="price">
@@ -351,7 +402,7 @@
                             <!-- <button class="btn-box">Know More</button> -->
                         </div>
                     </a>
-                    <a href="https://example-link.com" target="_blank">
+                    <a href="price3.html">
                         <!-- Project 3 -->
                         <div class="row">
                             <div class="price">
@@ -365,23 +416,9 @@
                     </a>
 
                     <!-- Hidden projects -->
-                    <a href="https://example-link.com" target="_blank">
+                    <a href="price4.html">
                         <div class="hidden">
                             <!-- Project 4 (hidden) -->
-                            <div class="row">
-                                <div class="price">
-                                    <img src="image/special effect/634f4c06f21696e78ac330afa4d22931.jpg"
-                                        alt="Special Effects Makeup" height="400px" width="350px">
-                                </div>
-                                <h3>Guest Makeup</h3>
-                                <p>price : Rs.4000-7000</p>
-                                <!-- <button class="btn-box">Know More</button> -->
-                            </div>
-                        </div>
-                    </a>
-                    <a href="https://example-link.com" target="_blank">
-                        <div class="hidden">
-                            <!-- Project 5 (hidden) -->
                             <div class="row">
                                 <div class="price">
                                     <img src="image/party/images (4) - 2023-11-13T164356.306.jpeg"
@@ -417,10 +454,10 @@
                 <div class="contact-form">
                     <form name="submit-to-google-sheet">
                         <input type="text" name="Name" placeholder="Enter Your Name" required>
-                        <input type="tel" name="Phone" id="mobileNumberInput" placeholder="Enter Your Mobile Number"
-                            required>
-                        <input type="email" name="Email" placeholder="Enter Your Email" required>
-                        <input type="text" name="Subject" placeholder="Enter Your Subject">
+                        <input type="number" name="Phone" pattern="[0-9]{1,10}" maxlength="10"
+                            placeholder="Enter Your Mobile number">
+                        <input type="text" name="makeup type" placeholder="Enter makeup type" required>
+                        <input type="date" name="Date" placeholder="Enter Your Date">
                         <textarea name="Message" id="Message" cols="40" rows="10" placeholder="Enter Your Message"
                             required></textarea>
                         <input type="submit" value="Submit" class="send">
@@ -435,16 +472,25 @@
         <div class="footer-flex">
             <div class="footer">
                 <h2 style="color: #ee9222; margin: 0 5%; font-size: 50px;">Arti Rajput</h2>
-                <p>Arti, the freelancer makeup artist, enhances your natural beauty with precision and flair. Your go-to
+                <p style="    text-shadow: 0 0 4px #fff;">Arti, the freelancer makeup artist, enhances your natural
+                    beauty with precision and flair. Your go-to
                     choice for all your makeup needs!</p>
             </div>
             <div class="footer1">
                 <h3 style="color: #ee9222;  margin: 0 5%; font-size: 50px;">Get In Touch</h3>
                 <i class="bx bxs-phone custom-icon"></i>
-                <span style="font-size: 30px;">7505580594</span><br>
+                <span style="font-size: 30px; text-shadow: 0 0 4px #fff;">7505580594</span><br>
                 <i class="bx bxs-envelope custom-icon"></i>
-                <span style="font-size: 30px;">artirajput0123@gmail.com</span>
-                <p>(Agra, U.P.) India</p>
+                <span style="font-size: 30px; text-shadow: 0 0 4px #fff;">artirajput0123@gmail.com</span>
+                <p style="text-shadow: 0 0 4px #fff;">(Agra, U.P.) India</p>
+            </div>
+            <div class="button-center">
+                <button class="btn1" type="button" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">
+                    <span id="span">Book Appointment</span>
+                    <div id="container-stars">
+                        <div id="stars"></div>
+                    </div>
+                </button>
             </div>
         </div>
         <div class="home-sci-fi">

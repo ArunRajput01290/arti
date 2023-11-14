@@ -1,4 +1,5 @@
-const scriptURL = 'https://script.google.com/macros/s/AKfycbzxwiivcl2Q1OETJMR4LW1t5xmjkHUO0fYAAHky3mEsZn3EOswKvEh2Pwdbh2dpKWzW/exec'
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwbPeAHk8j5REXrL14jbRgoHJlyHM6HdE7xlJimTv9zdDiZrSXf-vVwUsKCOqC5RqyuhA/exec'
+
 const form = document.forms['submit-to-google-sheet']
 const msg = document.getElementById("msg")
 
@@ -13,8 +14,25 @@ form.addEventListener('submit', e => {
             form.reset()
         })
         .catch(error => console.error('Error!', error.message))
-})
+}) 
 
+const scriptURLS = 'https://script.google.com/macros/s/AKfycbxYlhz-05agLMWDkZl1Xo53fsSNhd6XUJnt8fMiyf0aCdb21TeSX9lf-IE4s6DAa8E0/exec'
+
+const forms = document.forms['submit-to-google-sheet1']
+const msgs = document.getElementById("msg")
+
+form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURLS, { method: 'POST', body: new FormData(forms) })
+        .then(response => {
+            msgs.innerHTML = "Message sent successfully"
+            setTimeout(function () {
+                msgs.innerHTML = ""
+            }, 6000)
+            forms.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+}) 
 
 
 function toggleProjects() {

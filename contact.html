@@ -5,166 +5,294 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-    <link rel="icon" href="image/aboutside.jpg" type="image/png">
+    <link rel="icon" href="image/2339.jpg" type="image/png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 
 <body>
-    <form action="contact.html" method="post">
-        <div class="page">
-            <div class="heading">
-                <h2>We are here to solve your all queries</h2>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="/"> <img src="image/Web_Photo_Editor.jpg" alt="logo"
+                    style="border-radius: 20%;" height="60px" width="60px"> Arti Rajput</a> <button
+                class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="" class="nav-link" type="button" class="btn btn-outline-primary" data-toggle="modal"
+                            data-target="#exampleModal" data-whatever="@mdo">Book Appointment</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#price">Price List</a>
+                    </li>
+                </ul>
             </div>
-            <div class="detail">
-                <p>Phone : 7505580594</p>
-                <p>Email : <a
-                        href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJfscdlgWMjmcVvXptZSjSTHlpQftPSWdzHBxRSTqqkznGGkqshbLKxjbbKmsSzkHpXNrJB"
-                        target="_blank">artirajput0123@gmail.com</a></p>
-                <p>website : <a href="#">arunrajput.com</a></p>
+        </nav>
+    </header>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Fill Information to Book Appointment </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body flex-column flex-sm-row">
+
+                    <div class="flex">
+                        <div class="images">
+                            <img src="image/Web_Photo_Editor.jpg" alt="image">
+                        </div>
+                        <form name="submit-to-google-sheet1">
+                            <div class="datas">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="recipient-name" name="name"
+                                        placeholder="Enter Your Name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="number" class="form-control" maxlength="10" id="recipient-name"
+                                        name="mobile" placeholder="Enter Your Mobile No.">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="recipient-name" name="makeup type"
+                                        placeholder="Enter Your Makeup Type">
+                                </div>
+                                <div class="form-group">
+                                    <input type="date" class="form-control" id="recipient-name" name="date"
+                                        placeholder="Enter Your Date">
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" id="message-text" name="message"
+                                        placeholder="Enter Your Message"></textarea>
+                                </div>
+                                <!-- <button type="submit" value="submit" class="send">submit</button>
+                            <span id="msg"></span> -->
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" value="submit" class="btn btn-primary">Send message</button>
+                </div>
             </div>
-            <div class="data">
-                <div class="content">
-                    <h2 style="color: rgb(0, 88, 202); text-align: center;">Book Appointment </h2>
+        </div>
+    </div>
+
+    <div class="page">
+        <div class="heading">
+            <h2>We are here to solve your all queries</h2>
+        </div>
+        <div class="detail">
+            <p>Phone : 7505580594</p>
+            <p>Email : <a
+                    href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJfscdlgWMjmcVvXptZSjSTHlpQftPSWdzHBxRSTqqkznGGkqshbLKxjbbKmsSzkHpXNrJB"
+                    target="_blank">artirajput0123@gmail.com</a></p>
+            <p>website : <a href="#">arunrajput.com</a></p>
+        </div>
+        <div class="data">
+            <div class="content">
+                <h2 style="color: rgb(0, 88, 202); text-align: center;">Contact Us </h2>
+                <form name="submit-to-google-sheet">
                     <div class="side">
                         <div class="name">
                             <p>First Name</p>
-                            <input type="text" name="name">
+                            <input type="text" name="Names" placeholder="Ex. john ">
                         </div>
                         <div class="email">
-                            <p>Email</p>
-                            <input type="email" name="email">
+                            <p>Mobile No.</p>
+                            <input type="number" name="email" pattern="[0-9]{1,10}" maxlength="10"
+                                placeholder="Ex. 9876543210">
                         </div>
                     </div>
-                    <p>Subject</p>
-                    <input type="text" name="subject">
-                    <p id="msg">Message</p>
-                    <textarea name="Suggestion" id="textarea" cols="70" rows="5"></textarea> <br>
-                    <button type="submit" id="btn">Submit</button>
-                </div>
-                <!-- <div class="image">
-                    <img src="image/web.webp" alt="image">
-                </div> -->
+                    <p>make-up type</p>
+                    <input type="text" name="make-up type" placeholder="Ex. bridal make-up , party makeup">
+                    <p>Your Date</p>
+                    <input type="date" name="Your Date" placeholder="Ex. 23/11/23">
+                    <p id="msg1">Message</p>
+                    <textarea name="Suggestion" id="textarea1" cols="70" rows="5"></textarea> <br>
+                    <input type="submit" value="Submit" class="send">
+                </form>
+                <span id="msg"></span>
             </div>
         </div>
-    </form>
+    </div>
+
     <a href="index.html"><button id="home">Go To Home</button></a>
+    <div class="last-text">
+        <div class="footer-flex">
+            <div class="footer">
+                <h2 style="color: #ee9222; margin: 0 5%; font-size: 50px;">Arti Rajput</h2>
+                <p style="text-shadow: 0 0 4px #fff;">Arti, the freelancer makeup artist, enhances your natural beauty
+                    with precision and flair. Your go-to
+                    choice for all your makeup needs!</p>
+            </div>
+            <div class="footer1">
+                <h3 style="color: #ee9222;  margin: 0 5%; font-size: 50px;">Get In Touch</h3>
+                <i class="bx bxs-phone custom-icon"></i>
+                <span style="font-size: 30px;     text-shadow: 0 0 4px #fff;">7505580594</span><br>
+                <i class="bx bxs-envelope custom-icon"></i>
+                <span style="font-size: 30px;     text-shadow: 0 0 4px #fff;">artirajput0123@gmail.com</span>
+                <p style="    text-shadow: 0 0 4px #fff;">(Agra, U.P.) India</p>
+            </div>
+            <div class="button-center">
+                <button class="btn1" type="button" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">
+                    <span id="span">Book Appointment</span>
+                    <div id="container-stars">
+                        <div id="stars"></div>
+                    </div>
+                </button>
+            </div>
+            <div class="home-sci-fi">
+                <a href="https://www.instagram.com/arunrajput64/" target="_blank" style="--i:7"><i
+                        class="bx bxl-instagram"></i></a>
+                <a href="https://wa.me/917505580594" target="_blank" style="--i:8"><i class="bx bxl-whatsapp"></i></a>
+                <a href="https://twitter.com/Arunrajput64" target="_blank" style="--i:9"><i
+                        class="bx bxl-twitter"></i></a>
+                <a href="#" style="--i:10"><i class='bx bxl-linkedin'></i></a>
+                <a href="#" style="--i:11"><i class='bx bxl-quora'></i></a>
+                <a href="#" style="--i:12"><i class='bx bxl-discord'></i></a>
+            </div>
+        </div>
 
-    <style>
-        body,
-        html {
-            height: 100%;
-            width: 100%;
-            /* background: url(https://media.istockphoto.com/id/1341408852/video/colored-smoke-on-a-dark-background-blue-and-red-light-with-smoke.jpg?s=640x640&k=20&c=v2DQUY8IVbli_6FH_9KAs6YWRXlDdYiBJHfp7JFh7NY=); */
-            /* background: url(https://e0.pxfuel.com/wallpapers/766/75/desktop-wallpaper-space-colors-blue-purple-stars.jpg); */
-            background: url(https://preview.redd.it/fresh-colorful-wallpapers-resolutions-minimum-4k-and-above-v0-or4unpwg9q8b1.jpg?width=640&crop=smart&auto=webp&s=cc87898e7de0dbbdb7837f9d4f3b7da24c4c5172);
-            background-size: cover;
-            background-position: center;
-            background-repeat: repeat-y;
-            background-attachment: fixed;
-            /* height: 100vh; */
-            margin: 0;
-        }
+        <style>
+            body,
+            html {
+                height: 100%;
+                width: 100%;
+                /* background: url(https://media.istockphoto.com/id/1341408852/video/colored-smoke-on-a-dark-background-blue-and-red-light-with-smoke.jpg?s=640x640&k=20&c=v2DQUY8IVbli_6FH_9KAs6YWRXlDdYiBJHfp7JFh7NY=); */
+                /* background: url(https://e0.pxfuel.com/wallpapers/766/75/desktop-wallpaper-space-colors-blue-purple-stars.jpg); */
+                background: url(https://preview.redd.it/fresh-colorful-wallpapers-resolutions-minimum-4k-and-above-v0-or4unpwg9q8b1.jpg?width=640&crop=smart&auto=webp&s=cc87898e7de0dbbdb7837f9d4f3b7da24c4c5172);
+                background-size: cover;
+                background-position: center;
+                background-repeat: repeat-y;
+                background-attachment: fixed;
+                /* height: 100vh; */
+                margin: 0;
+            }
 
-        * {
-            margin: 0;
-            padding: 0;
-        }
+            .send {
+                display: inline-block;
+                padding: 14px 60px;
+                background: #0ef;
+                border-radius: 40px;
+                font-size: 18px;
+                color: #081b29;
+                letter-spacing: 1px;
+                text-decoration: none;
+                font-weight: 600;
+                opacity: 0;
+                animation: slidetop 1s ease forwards;
+                animation-delay: 2s;
+                box-shadow: 0 0 5px #0ef,
+                    0 0 25px #0ef,
+            }
 
-        .page {
-            max-width: 100%;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        .heading {
-            text-align: center;
-            margin: 30px;
-            font-size: 3rem;
-            color: #ffffff;
-        }
-
-        .detail {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
-            font-size: 1.5rem;
-            margin-bottom: 30px;
-            color: #ffffff;
-        }
-
-        .data {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-
-        .content {
-            flex: 1;
-            padding: 20px;
-            color: #ffffff;
-        }
-
-        .side {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            margin-bottom: 20px;
-            margin-top: 20px;
-        }
-
-        .name,
-        .email {
-            flex-basis: calc(50% - 10px);
-        }
-
-        input,
-        textarea {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            margin-bottom: 10px;
-        }
-
-        #btn {
-            border-radius: 12px;
-            background-color: rgb(219, 25, 25);
-            padding: 10px;
-            margin: 20px 0;
-            color: aliceblue;
-            width: 100%;
-        }
-
-        img {
-            max-width: 90%;
-            height: 125%;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            border-radius: 20px;
-            box-shadow: 2px 4px 16px 2px #5c5959;
-            max-height: 100vh;
-        }
+            .send:hover {
+                box-shadow: 0 0 5px cyan,
+                    0 0 25px cyan,
+                    0 0 50px cyan,
+                    0 0 100px cyan,
+                    0 0 200px cyan;
+            }
 
 
-        @media (max-width: 1350px) {
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            .content p {
+                text-align: start;
+            }
+
+            .page {
+                max-width: 100%;
+                margin: 0 auto;
+                padding: 20px;
+            }
+
+            .heading {
+                text-align: center;
+                margin: 30px;
+                font-size: 3rem;
+                color: #ffffff;
+            }
+
+            .detail {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                font-size: 1.5rem;
+                margin-bottom: 30px;
+                color: #ffffff;
+                text-align: start;
+            }
+
+            .data {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+
+            .content {
+                flex: 1;
+                padding: 20px;
+                color: #ffffff;
+                text-align: start;
+            }
+
             .side {
-                flex-direction: column;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                margin-bottom: 20px;
+                margin-top: 20px;
             }
 
             .name,
             .email {
-                flex-basis: 100%;
+                flex-basis: calc(50% - 10px);
+                text-align: start;
             }
 
-            .data {
-                display: block;
+            input,
+            #textarea1 {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                margin-bottom: 10px;
+                background-color: #ffffff;
+            }
+
+            #btn {
+                border-radius: 12px;
+                background-color: rgb(219, 25, 25);
+                padding: 10px;
+                margin: 20px 0;
+                color: aliceblue;
+                width: 100%;
             }
 
             img {
-                max-width: 100%;
-                height: auto;
+                max-width: 90%;
+                height: 125%;
                 display: block;
                 margin-left: auto;
                 margin-right: auto;
@@ -173,32 +301,59 @@
                 max-height: 100vh;
             }
 
-        }
 
-        #home {
-            width: 80%;
-            height: 60px;
-            text-align: center;
-            border-radius: 28px;
-            background-color: #007BFF;
-            margin-left: 10%;
-            margin-right: 10%;
-            border: none;
-            margin-bottom: 10px;
-            color: white;
-            font-size: 22px;
-            margin-top: 2%;
-        }
-    </style>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+            @media (max-width: 1350px) {
+                .side {
+                    flex-direction: column;
+                }
+
+                .name,
+                .email {
+                    flex-basis: 100%;
+                }
+
+                .data {
+                    display: block;
+                }
+
+                img {
+                    max-width: 100%;
+                    height: auto;
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    border-radius: 20px;
+                    box-shadow: 2px 4px 16px 2px #5c5959;
+                    max-height: 100vh;
+                }
+
+            }
+
+            #home {
+                width: 80%;
+                height: 60px;
+                text-align: center;
+                border-radius: 28px;
+                background-color: #007BFF;
+                margin-left: 10%;
+                margin-right: 10%;
+                border: none;
+                margin-bottom: 10px;
+                color: white;
+                font-size: 22px;
+                margin-top: 2%;
+            }
+        </style>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+        <script src="script.js"></script>
 </body>
 
 </html>
