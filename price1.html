@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>price</title>
-    <link rel="icon" href="image/2339.jpg" type="image/png">
+    <link rel="icon" href="2339.jpg" type="png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
@@ -71,7 +71,7 @@
 <body>
     <header class="header">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="/"> <img src="image/Web_Photo_Editor.jpg" alt="logo"
+            <a class="navbar-brand" href="/"> <img src="Web_Photo_Editor.jpg" alt="logo"
                     style="border-radius: 20%;" height="60px" width="60px"> Arti Rajput</a> <button
                 class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -105,7 +105,7 @@
                     <!-- Project 1 -->
                     <div class="row">
                         <div class="price">
-                            <img src="image/air brush/tumblr_e21db37415511e85ce845afec1cdb9cf_780e94e4_1280.jpg"
+                            <img src="tumblr_e21db37415511e85ce845afec1cdb9cf_780e94e4_1280.jpg"
                                 alt="Bridal Makeup Look" height="400px" width="350px">
                         </div>
                         <h3>1. HD Makeup</h3><br>
@@ -116,7 +116,7 @@
                     <!-- Project 2 -->
                     <div class="row">
                         <div class="price">
-                            <img src="image/party/download (4).jpeg" alt="Party Makeup Look" height="400px"
+                            <img src="download (4).jpeg" alt="Party Makeup Look" height="400px"
                                 width="350px">
                         </div>
                         <h3>2. HD + Airbrush Makeup</h3>
@@ -137,57 +137,59 @@
         </button>
     </div>
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Fill Information to Book Appointment </h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Fill Information to Book Appointment </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form   action="https://formspree.io/f/mleyknwd"
+            method="POST" id="myForm">
                 <div class="modal-body flex-column flex-sm-row">
-
                     <div class="flex">
                         <div class="images">
-                            <img src="image/Web_Photo_Editor.jpg" alt="image">
+                            <img src="Web_Photo_Editor.jpg" alt="image">
                         </div>
-                        <form name="submit-to-google-sheet1">
-                            <div class="datas">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="recipient-name" name="name"
-                                        placeholder="Enter Your Name">
-                                </div>
-                                <div class="form-group">
-                                    <input type="number" class="form-control" maxlength="10" id="recipient-name"
-                                        name="mobile" placeholder="Enter Your Mobile No.">
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="recipient-name" name="makeup type"
-                                        placeholder="Enter Your Makeup Type">
-                                </div>
-                                <div class="form-group">
-                                    <input type="date" class="form-control" id="recipient-name" name="date"
-                                        placeholder="Enter Your Date">
-                                </div>
-                                <div class="form-group">
-                                    <textarea class="form-control" id="message-text" name="message"
-                                        placeholder="Enter Your Message"></textarea>
-                                </div>
-                                <!-- <button type="submit" value="submit" class="send">submit</button>
-                            <span id="msg"></span> -->
+
+                        <div class="datas">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="name" name="name"
+                                    placeholder="Enter Your Name"  required>
                             </div>
-                        </form>
+                            <div class="form-group">
+                                <input type="number" class="form-control" maxlength="10" id="phone"
+                                    name="mobile" placeholder="Enter Your Mobile No." required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="type" name="makeup type"
+                                    placeholder="Enter Your Makeup Type" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="date" class="form-control" id="date" name="date"
+                                    placeholder="Enter Your Date" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" id="message" name="message"
+                                    placeholder="Enter Your Message"></textarea>
+                            </div>
+                            <!-- <button type="submit" value="submit" class="send">submit</button>
+                            <span id="msg"></span> -->
+                        </div>
+
                     </div>
 
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="submit" value="submit" class="btn btn-primary">Send message</button>
+                    <button type="submit" onclick="submitForm()" value="submit" class="btn btn-primary">Send message</button>
                 </div>
-            </div>
+            </form>
         </div>
     </div>
+</div>
 
     <a href="index.html"><button id="home">Go To Home</button></a>
     <div class="last-text">
