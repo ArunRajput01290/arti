@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arti rajput</title>
-    <link rel="icon" href="2339.jpg" type="image/png">
+    <link rel="icon" href="image/2339.jpg" type="image/png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
@@ -16,7 +16,7 @@
 <body>
     <header class="header">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="/"> <img src="Web_Photo_Editor.jpg" alt="logo"
+            <a class="navbar-brand" href="/"> <img src="image/Web_Photo_Editor.jpg" alt="logo"
                     style="border-radius: 20%;" height="60px" width="60px"> Arti Rajput</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -81,45 +81,47 @@
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-                    <div class="modal-body flex-column flex-sm-row">
+                    <form   action="https://formspree.io/f/mleyknwd"
+                    method="POST" id="myForm">
+                        <div class="modal-body flex-column flex-sm-row">
+                            <div class="flex">
+                                <div class="images">
+                                    <img src="image/Web_Photo_Editor.jpg" alt="image">
+                                </div>
 
-                        <div class="flex">
-                            <div class="images">
-                                <img src="Web_Photo_Editor.jpg" alt="image">
-                            </div>
-                            <form name="submit-to-google-sheet1">
                                 <div class="datas">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" id="recipient-name" name="name"
+                                        <input type="text" class="form-control" id="name" name="name"
                                             placeholder="Enter Your Name">
                                     </div>
                                     <div class="form-group">
-                                        <input type="number" class="form-control" maxlength="10" id="recipient-name" name="mobile"
-                                            placeholder="Enter Your Mobile No.">
+                                        <input type="number" class="form-control" maxlength="10" id="phone"
+                                            name="mobile" placeholder="Enter Your Mobile No.">
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" class="form-control" id="recipient-name" name="makeup type"
+                                        <input type="text" class="form-control" id="type" name="makeup type"
                                             placeholder="Enter Your Makeup Type">
                                     </div>
                                     <div class="form-group">
-                                        <input type="date" class="form-control" id="recipient-name" name="date"
+                                        <input type="date" class="form-control" id="date" name="date"
                                             placeholder="Enter Your Date">
                                     </div>
                                     <div class="form-group">
-                                        <textarea class="form-control" id="message-text" name="message"
+                                        <textarea class="form-control" id="message" name="message"
                                             placeholder="Enter Your Message"></textarea>
                                     </div>
                                     <!-- <button type="submit" value="submit" class="send">submit</button>
                                     <span id="msg"></span> -->
                                 </div>
-                            </form>
-                        </div>
 
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="submit" value="submit" class="btn btn-primary">Send message</button>
-                    </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="submit" onclick="submitForm()" value="submit" class="btn btn-primary">Send message</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -130,7 +132,7 @@
     <section class="about" id="about">
         <div class="aboutflex">
             <div class="about-img">
-                <img id="1st-img" src="2339.jpg" alt="about">
+                <img id="1st-img" src="image/2339.jpg" alt="about">
             </div>
             <div class="about-content">
                 <h2>About <span>Me</span></h2>
@@ -155,7 +157,7 @@
                 <div class="services-list">
                     <div>
                         <i class="fas fa-ring" style="color: #ff4081;"></i>
-                        <img class="serv-img" src="images (4) - 2023-11-13T164308.618.jpeg" alt="bridal">
+                        <img class="serv-img" src="image/bride/images (4) - 2023-11-13T164308.618.jpeg" alt="bridal">
                         <h2>Bridal Bliss</h2>
                         <p>Capture the magic of your special day with our enchanting bridal makeup services. Our team of
                             skilled makeup artists specializes in creating timeless and radiant bridal looks that
@@ -165,7 +167,7 @@
                     </div>
                     <div>
                         <i class="fas fa-glass-cheers" style="color: #ff4081;"></i>
-                        <img class="serv-img" src="download (3).jpeg" alt="bridal">
+                        <img class="serv-img" src="image/party/download (3).jpeg" alt="bridal">
                         <h2>Party Perfection</h2>
                         <p>Turn heads at every event with our party-perfect makeup services. Whether it's a night out
                             with friends or a special celebration, our makeup artists are experts in creating
@@ -175,7 +177,7 @@
                     </div>
                     <div>
                         <i class="fas fa-star" style="color: #ff4081;"></i>
-                        <img class="serv-img" src="634f4c06f21696e78ac330afa4d22931.jpg"
+                        <img class="serv-img" src="image/special effect/634f4c06f21696e78ac330afa4d22931.jpg"
                             alt="bridal">
                         <h2>Celebrity Glamour</h2>
                         <p>Indulge in the allure of celebrity-inspired beauty with our exclusive celebrity glamour
@@ -288,11 +290,11 @@
                     <!-- Project 1 -->
                     <div class="row">
                         <div class="slideshow">
-                            <img src="images-bride.jpeg" alt="Bridal Makeup Look" height="400px"
+                            <img src="image/bride/images-bride.jpeg" alt="Bridal Makeup Look" height="400px"
                                 width="340px">
-                            <img src="download (2).jpeg" alt="Bridal Makeup Look" height="400px"
+                            <img src="image/bride/download (2).jpeg" alt="Bridal Makeup Look" height="400px"
                                 width="340px">
-                            <!-- <img src="images (4) - 2023-11-13T164308.618.jpeg" alt="Bridal Makeup Look" height="400px"
+                            <!-- <img src="image/bride/images (4) - 2023-11-13T164308.618.jpeg" alt="Bridal Makeup Look" height="400px"
                                 width="340px">-->
                         </div>
                         <div class="layer">
@@ -303,9 +305,9 @@
                     <!-- Project 2 -->
                     <div class="row">
                         <div class="slideshow">
-                            <img src="download (3).jpeg" alt="Party Makeup Look" height="400px"
+                            <img src="image/party/download (3).jpeg" alt="Party Makeup Look" height="400px"
                                 width="340px">
-                            <img src="images (4) - 2023-11-13T164356.306.jpeg" alt="Party Makeup Look"
+                            <img src="image/party/images (4) - 2023-11-13T164356.306.jpeg" alt="Party Makeup Look"
                                 height="400px" width="340px">
                         </div>
                         <div class="layer">
@@ -317,8 +319,8 @@
                     <!-- Project 3 -->
                     <div class="row">
                         <div class="slideshow">
-                            <img src="1.jpg" alt="Airbrush Makeup" height="400px" width="340px">
-                            <img src="tumblr_e21db37415511e85ce845afec1cdb9cf_780e94e4_1280.jpg"
+                            <img src="image/air brush/1.jpg" alt="Airbrush Makeup" height="400px" width="340px">
+                            <img src="image/air brush/tumblr_e21db37415511e85ce845afec1cdb9cf_780e94e4_1280.jpg"
                                 alt="Airbrush Makeup" height="400px" width="340px">
                         </div>
                         <div class="layer">
@@ -333,9 +335,9 @@
                         <!-- Project 4 (hidden) -->
                         <div class="row">
                             <div class="slideshow">
-                                <img src="634f4c06f21696e78ac330afa4d22931.jpg"
+                                <img src="image/special effect/634f4c06f21696e78ac330afa4d22931.jpg"
                                     alt="Special Effects Makeup" height="400px" width="340px">
-                                <!-- <img src="special-effects-2.png" alt="Special Effects Makeup" height="400px"
+                                <!-- <img src="image/special-effects-2.png" alt="Special Effects Makeup" height="400px"
                                         width="340px"> -->
                             </div>
                             <div class="layer">
@@ -349,11 +351,11 @@
                             <!-- Project 5 (hidden)
                             <div class="row">
                                 <div class="slideshow">
-                                    <img src="celebrity-makeup-1.png" alt="Celebrity Inspired Makeup"
+                                    <img src="image/celebrity-makeup-1.png" alt="Celebrity Inspired Makeup"
                                         height="400px" width="340px">
-                                    <img src="celebrity-makeup-2.png" alt="Celebrity Inspired Makeup"
+                                    <img src="image/celebrity-makeup-2.png" alt="Celebrity Inspired Makeup"
                                         height="400px" width="340px">
-                                    <img src="celebrity-makeup-3.png" alt="Celebrity Inspired Makeup"
+                                    <img src="image/celebrity-makeup-3.png" alt="Celebrity Inspired Makeup"
                                         height="400px" width="340px">
                                 </div>
                                 <div class="layer">
@@ -382,7 +384,7 @@
                     <a href="price1.html">
                         <div class="row">
                             <div class="price">
-                                <img src="tumblr_e21db37415511e85ce845afec1cdb9cf_780e94e4_1280.jpg"
+                                <img src="image/air brush/tumblr_e21db37415511e85ce845afec1cdb9cf_780e94e4_1280.jpg"
                                     alt="Bridal Makeup Look" height="400px" width="350px">
                             </div>
                             <h3>Bridal / Reception Makeup</h3><br>
@@ -394,7 +396,7 @@
                         <!-- Project 2 -->
                         <div class="row">
                             <div class="price">
-                                <img src="download (4).jpeg" alt="Party Makeup Look" height="400px"
+                                <img src="image/party/download (4).jpeg" alt="Party Makeup Look" height="400px"
                                     width="350px">
                             </div>
                             <h3>Engagement /Sangeet/ Cocktail Makeup</h3>
@@ -406,7 +408,7 @@
                         <!-- Project 3 -->
                         <div class="row">
                             <div class="price">
-                                <img src="images-bride.jpeg" alt="Airbrush Makeup" height="400px"
+                                <img src="image/bride/images-bride.jpeg" alt="Airbrush Makeup" height="400px"
                                     width="350px">
                             </div>
                             <h3>Party Makeup</h3>
@@ -421,7 +423,7 @@
                             <!-- Project 4 (hidden) -->
                             <div class="row">
                                 <div class="price">
-                                    <img src="images (4) - 2023-11-13T164356.306.jpeg"
+                                    <img src="image/party/images (4) - 2023-11-13T164356.306.jpeg"
                                         alt="Celebrity Inspired Makeup" height="400px" width="350px">
                                 </div>
                                 <h3>Haldi / Mehandi Makeup</h3>
@@ -480,9 +482,10 @@
                 <h3 style="color: #ee9222;  margin: 0 5%; font-size: 50px;">Get In Touch</h3>
                 <i class="bx bxs-phone custom-icon"></i>
                 <span style="font-size: 30px; text-shadow: 0 0 4px #fff;">7505580594</span><br>
-                <i class="bx bxs-envelope custom-icon"></i>
-                <span style="font-size: 30px; text-shadow: 0 0 4px #fff;">artirajput0123@gmail.com</span>
-                <p style="text-shadow: 0 0 4px #fff;">(Agra, U.P.) India</p>
+                <!-- <i class="bx bxs-envelope custom-icon"></i> -->
+                <!-- <span style="font-size: 30px; text-shadow: 0 0 4px #fff;">artirajput0123@gmail.com</span> -->
+                <i class='bx bx-current-location custom-icon'></i>
+                <span style="font-size: 30px; text-shadow: 0 0 4px #fff;">(Agra, U.P.) India</span>
             </div>
             <div class="button-center">
                 <button class="btn1" type="button" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">
@@ -514,11 +517,9 @@
             </div>
         </div>
     </div>
-
-
-
     <a href="#" class="top"><i class="bx bx-up-arrow-alt"></i> </a>
 
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"

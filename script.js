@@ -14,26 +14,7 @@ form.addEventListener('submit', e => {
             form.reset()
         })
         .catch(error => console.error('Error!', error.message))
-}) 
-
-const scriptURLS = 'https://script.google.com/macros/s/AKfycbxYlhz-05agLMWDkZl1Xo53fsSNhd6XUJnt8fMiyf0aCdb21TeSX9lf-IE4s6DAa8E0/exec'
-
-const forms = document.forms['submit-to-google-sheet1']
-const msgs = document.getElementById("msg")
-
-form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURLS, { method: 'POST', body: new FormData(forms) })
-        .then(response => {
-            msgs.innerHTML = "Message sent successfully"
-            setTimeout(function () {
-                msgs.innerHTML = ""
-            }, 6000)
-            forms.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-}) 
-
+})
 
 function toggleProjects() {
     var hiddenProjects = document.querySelectorAll('.hidden');
